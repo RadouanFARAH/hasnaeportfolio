@@ -85,6 +85,7 @@ section .title::after{
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    background: #202627;
 }
 .navbar.sticky{
     padding: 15px 0;
@@ -367,6 +368,89 @@ section .title::after{
 }
 
 /* teams section styling */
+
+/* Section Styles */
+.teams .teams {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+.teams .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.teams .title {
+    text-align: center;
+    color: #333;
+}
+
+/* Card Styles */
+.teams .card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.teams .box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #2a414d;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.teams .box:hover {
+    transform: scale(1.05);
+}
+
+.teams img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.teams .text {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.teams p {
+    padding: 10px;
+    color: #ffffff;
+}
+
+.teams .btn2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #5b9dff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.teams .btn2:hover {
+    background-color: #b6cae8;
+    color: #1b4483;
+}
+
+@media screen and (max-width: 768px) {
+    .teams .card {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+
 .teams .title::after{
     content: "more to come";
 }
